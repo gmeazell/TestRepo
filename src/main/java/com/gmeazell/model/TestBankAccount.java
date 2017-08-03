@@ -6,4 +6,12 @@ import org.junit.Test;
 
 public class TestBankAccount {
 
+@Test
+public void testDebitWithSufficientFunds() {
+	BankAccount acct = new BankAccount(10);
+	double amount = acct.debit(5);
+	Assert.assertEquals(5.0,amount);
+}
+
+
 }
