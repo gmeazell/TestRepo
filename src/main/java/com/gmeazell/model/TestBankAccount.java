@@ -19,7 +19,7 @@ public void testDebitWithInSufficientFunds() {
 	double amount = acct.debit(11);
 	Assert.assertEquals(10.0,amount);
 
-
+}
 
 
 }
